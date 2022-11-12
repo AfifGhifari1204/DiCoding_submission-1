@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+body {
+    background-color: #00030b;
+    font-family: 'Manrope';
+    color: white;
+    cursor: default;
+}
+
+nav {
+    top: 0;
+    height: 81px;
+    width: 100%;
+    font-size: large;
+    flex-wrap: wrap;
+    display: flex;
+    position: fixed;
+    background-color: #00030b;
+    border-radius: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover, a:focus {
+    color: black;
+    background-color: white;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+.dropdown-content a:hover{
+    background-color: #00030b;
+    color: white;
+    border: 1px solid white;
+}
+.dropdown-show{
+    display: block;
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 70px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+
+.author {
+    width: 300px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 10%;
+    text-align: center;
+}
+.profile-card{
+    padding: 40px 10px;
+    background-color: #061232;
+    border-radius: 10px;
+}
+.profile {
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+.profile:hover {
+    position: relative;
+    width: 120px;
+}
+
+.card {
+    padding: 30px;
+    margin: 20px auto;
+    border: 4px solid #061232;
+    border-radius: 10px;
+    background-color: #061232;
+    width: 80%;
+    overflow: auto;
+    align-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 78%;
+    margin: 0 auto;
+}
+h2{
+    text-indent: 2em;
+}
+
+.p-main {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+h2 {
+    margin: 30px;
+}
+
+.main-images {
+    margin: 20px 15%;
+    width: 60%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    transition: max-height 1s;
+}
+
+.main-images:hover {
+    max-height: 100%;
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #1a2440;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: large;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1135px) {
+    h2{
+        text-indent: 0;
+    }
+    p{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    p{
+        font-size: small;
+    }
+    ul{
+        margin: auto 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    h1{
+        margin: 25px auto;
+    }
+}
